@@ -1,0 +1,191 @@
+.background {
+  viewport-fill: #111111;
+  fill: #999999;
+}
+.mauckster {
+  fill: #999999;
+  opacity: 0.3;
+  x: 88;
+  y: 266;
+}
+#maucksterName {
+  font-size: 22;
+  font-family: System-Regular;
+  text-length: 40;
+  text-anchor: start;
+  fill: #999999;
+  x: 118;
+  y: 284;
+}
+.mauckster_analog {
+  fill: #999999;
+  opacity: 0.1;
+  x: 20%;
+  y: 20%;
+}
+/* #battery-holder {
+  pointer-events: visible;
+} */
+.battery {
+  fill: #f83c40;
+  opacity: 1;
+}
+.battery-label {
+  font-size: 22;
+  font-family: System-Regular;
+  text-length: 40;
+  text-anchor: start;
+  fill: #eeeeee;
+}
+#stepDiv {
+  pointer-events: visible;
+}
+.steps {
+  fill: #5BE37D; /*#2490dd;*/
+  opacity: 1;
+}
+#mySteps {
+  font-size: 38;
+  font-family: System-Regular;
+  text-length: 40;
+  text-anchor: start;
+  fill: #ffffff;
+}
+.heart {
+  fill: #f83c40;
+  opacity: 1;
+}
+#myHeart {
+  font-size: 38;
+  font-family: System-Regular;
+  text-length: 40;
+  text-anchor: start;
+  fill: #ffffff;
+}
+.cals {
+  fill: #FFCC33;
+  opacity: 1;
+}
+#myCals {
+  font-size: 38;
+  font-family: System-Regular;
+  text-length: 40;
+  text-anchor: start;
+  fill: #ffffff;
+}
+.distance {
+  fill: #FC6B3A; /*#F83C40;*/
+  opacity: 1;
+}
+#myDistance {
+  font-size: 38;
+  font-family: System-Regular;
+  text-length: 40;
+  text-anchor: start;
+  fill: #ffffff;
+}
+.floors {
+  fill: #3182DE;
+  opacity: 1;
+}
+#myFloors {
+  font-size: 38;
+  font-family: System-Regular;
+  text-length: 40;
+  text-anchor: start;
+  fill: #ffffff;
+}
+#myTime {
+  font-size: 70;
+  font-family: System-Regular;
+  text-length: 32;
+  text-anchor: start;
+  x: 21;
+  y: 93%;
+  fill: white;
+}
+#digitalHours {
+  font-size: 106;
+  font-family: System-Light;
+  text-length: 20;
+  text-anchor: start;
+/*   x: 21;
+  y: 40%; */
+  fill: white;
+}
+#digitalMinutes {
+  font-size: 106;
+  font-family: System-Light;
+  text-length: 20;
+  text-anchor: start;
+/*   x: 21;
+  y: 93%; */
+  fill: white;
+}
+#digitalWeekDay {
+  font-size: 24;
+  font-family: System-Light;
+  text-length: 10;
+  text-anchor: start;
+  fill: #eeeeee;
+}
+#digitalDayNumber {
+  font-size: 24;
+  font-family: System-Light;
+  text-length: 10;
+  text-anchor: start;
+  fill: #eeeeee;
+}
+#myDate {
+  font-size: 24;
+  font-family: System-Regular;
+  text-length: 16;
+  text-anchor: start;
+/*   x: 94%;
+  y: 93%; */
+  fill: #eeeeee;
+}
+#digitalFace {
+  display: none;
+  pointer-events: visible;
+}
+#clockFace {
+/*   display: none; */
+  fill: #000000;
+  pointer-events: visible;
+}
+
+.markercolour {
+  fill: #c7c7c7;
+}
+
+.accentcolour {
+  fill: #2F77D4;
+}
+
+.maindialtwelve {
+  y: -48%;
+  width: 2;
+  height: 20;
+}
+
+.maindialquarter {
+  x: 0%-1;
+  y: -48%;
+  width: 3;
+  height: 20;
+}
+
+.maindialfive {
+  x: 0%-1;
+  y: -48%;
+  width: 3;
+  height: 15;
+}
+
+.maindialminute {
+  x: 0%-1;
+  y: -48%;
+  width: 3;
+  height: 5;
+}
