@@ -8,6 +8,7 @@ export default class Steps {
   constructor() {
     this.mySteps = document.getElementById("mySteps");
     this.stepHolder = document.getElementById("stepDiv");
+    this.analogSteps = document.getElementById("analogSteps");
     this.myDistance = document.getElementById("myDistance");
     this.myFloors = document.getElementById("myFloors");
     this.root = document.getElementById('root');
@@ -22,6 +23,7 @@ export default class Steps {
     const goalCompletionNormal = today.local.steps / goals.steps;
     const gaugeSweepAngle = util.mapNumber(goalCompletionNormal, 0, 1, 0, 360);
     this.mySteps.text = util.formatNumber(steps);
+    this.analogSteps.text = util.formatNumber(steps);
     this.myDistance.text = util.formatMiles(today.adjusted.distance);
     this.myFloors.text = today.adjusted.elevationGain;
   }

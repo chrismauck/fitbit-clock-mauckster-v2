@@ -5,8 +5,12 @@ import * as util from "../../common/utils";
 
 export default class Clock {
   constructor() {
-    // this.myTime = document.getElementById("myTime");
+    this.statsDisplayed = false;
+    this.timer = 0;
+    this.digitalAnalog = document.getElementById("digitalAnalog");
+    this.analogSteps = document.getElementById("analogSteps");
     this.myDate = document.getElementById("myDate");
+    this.analogDialGroup = document.getElementById("analogDialGroup");
     
     this.digitalHours = document.getElementById("digitalHours");
     this.digitalMinutes = document.getElementById("digitalMinutes");
@@ -23,8 +27,12 @@ export default class Clock {
     this.digitalFace = document.getElementById("digitalFace");
     this.clockFace = document.getElementById("clockFace");
     
-    this.digitalFace.onclick = this.goAnalog.bind(this);
-    this.clockFace.onclick = this.goDitial.bind(this);
+    this.switchToDigital = document.getElementById("switchToDigital");
+    this.switchToAnalog = document.getElementById("switchToAnalog");
+    
+    this.switchToAnalog.onclick = this.goAnalog.bind(this);
+    this.switchToDigital.onclick = this.goDitial.bind(this);
+    this.clockFace.onclick = this.displayAnalogDigital.bind(this);
   }
 
   init() {
@@ -39,7 +47,7 @@ export default class Clock {
       hours = util.zeroPad(hours);
       
       let mins = util.zeroPad(tod.getMinutes());
-      // this.myTime.text = `${hours}:${mins}`;
+      this.digitalAnalog.text = `${hours}:${mins}`;
       this.myDate.text = `${util.getWeekday()} ${util.getDay()}`;
       this.digitalHours.text = hours;
       this.digitalMinutes.text = mins;
@@ -60,6 +68,37 @@ export default class Clock {
   goAnalog() {
     this.digitalFace.style.display = "none";
     this.clockFace.style.display = "inline";
+  }
+  
+  showStats() {
+    // show stats
+    this.analogDialGroup.style.opacity = 0.3;
+    this.analogSteps.style.display = "inline";
+    this.digitalAnalog.style.display = "inline";
+    this.timer = setTimeout(() => {
+      this.displayAnalogDigital();
+    }, 5000);
+  }
+  
+  hideStats() {
+    if (this.timer) {
+      clearTimeout(this.timer);
+      this.timer = 0;
+    }
+    // hide stats
+    this.analogDialGroup.style.opacity = 1;
+    this.analogSteps.style.display = "none";
+    this.digitalAnalog.style.display = "none";
+  }
+  
+  displayAnalogDigital() {
+    if(this.statsDisplayed) {
+      this.statsDisplayed = false;
+      this.hideStats();
+    } else {
+      this.statsDisplayed = true;
+      this.showStats();
+    }
   }
 
   start() {

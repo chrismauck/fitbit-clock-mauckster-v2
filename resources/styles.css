@@ -37,9 +37,9 @@
   text-anchor: start;
   fill: #eeeeee;
 }
-#stepDiv {
+/* #stepDiv {
   pointer-events: visible;
-}
+} */
 .steps {
   fill: #5BE37D; /*#2490dd;*/
   opacity: 1;
@@ -95,14 +95,20 @@
   text-anchor: start;
   fill: #ffffff;
 }
-#myTime {
-  font-size: 70;
+#analogSteps {
+  display: none;
+  font-size: 50;
+  font-family: System-Regular;
+  text-length: 40;
+  text-anchor: middle;
+}
+
+#digitalAnalog {
+  display: none;
+  font-size: 50;
   font-family: System-Regular;
   text-length: 32;
-  text-anchor: start;
-  x: 21;
-  y: 93%;
-  fill: white;
+  text-anchor: middle;
 }
 #digitalHours {
   font-size: 106;
@@ -154,7 +160,13 @@
   fill: #000000;
   pointer-events: visible;
 }
-
+.switchFaces {
+  pointer-events: visible;
+}
+/* .switchFace {
+  pointer-events: visible;
+}
+ */
 .markercolour {
   fill: #c7c7c7;
 }
