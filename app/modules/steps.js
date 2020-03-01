@@ -20,7 +20,7 @@ export default class Steps {
 
   update() {
     const steps = today.adjusted.steps.toString();
-    const goalCompletionNormal = today.local.steps / goals.steps;
+    const goalCompletionNormal = today.adjusted.steps / goals.steps;
     const gaugeSweepAngle = util.mapNumber(goalCompletionNormal, 0, 1, 0, 360);
     this.mySteps.text = util.formatNumber(steps);
     this.analogSteps.text = util.formatNumber(steps);

@@ -1,6 +1,5 @@
 import document from "document";
-import { battery } from "power";
-import { charger } from "power";
+import { battery, charger } from "power";
 
 export default class Battery {
   constructor() {

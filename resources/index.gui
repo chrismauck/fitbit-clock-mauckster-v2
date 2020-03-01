@@ -6,17 +6,17 @@
       <text id="maucksterName">mauckster</text>
     </svg>
     <svg x="13" y="15" id="battery-holder">
-      <image x="0" y="0" width="29" height="29" href="img/battery.png" class="battery"/>
+      <image x="0" y="0" width="29" height="29" href="img/battery.png" class="battery theme"/>
       <text id="battery-label" class="battery-label" x="33" y="22">####</text>
     </svg>
     <svg id="stepDiv" x="46%" y="18">
       <g>
-        <image width="31" height="31" x="0" y="0" href="img/sneaker.png" class="steps" />
+        <image width="31" height="31" x="0" y="0" href="img/sneaker.png" class="steps theme" />
         <text id="mySteps" x="40" y="30" />
       </g>
     </svg>
     <svg id="calDiv" x="46%" y="68">
-      <image width="31" height="31" x="0" y="0" href="img/calories.png" class="cals" />
+      <image width="31" height="31" x="0" y="0" href="img/calories.png" class="cals theme" />
       <text id="myCals" x="40" y="30" />
     </svg>
     <svg id="heartDiv" x="46%" y="118">
@@ -24,11 +24,11 @@
       <text id="myHeart" x="40" y="30" />
     </svg>
     <svg id="distanceDiv" x="46%" y="168">
-      <image width="31" height="31" x="0" y="0" href="img/distance.png" class="distance" />
+      <image width="31" height="31" x="0" y="0" href="img/distance.png" class="distance theme" />
       <text id="myDistance" x="40" y="30">## mi</text>
     </svg>
     <svg id="floorsDiv" x="46%" y="218">
-      <image width="31" height="31" x="0" y="0" href="img/floors.png" class="floors" />
+      <image width="31" height="31" x="0" y="0" href="img/floors.png" class="floors theme" />
       <text id="myFloors" x="40" y="30">##</text>
     </svg>
     <text id="digitalHours" x="14" y="166" />
